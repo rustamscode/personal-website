@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rustam | Software Engineer</title>
+    <meta name="description" content="Portfolio of Rustam, a Java/Kotlin Backend Developer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+            },
+            colors: {
+              background: '#0a0a0a',
+              surface: '#171717',
+              primary: '#3b82f6', // Blue-500
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      /* Custom scrollbar for a slicker look */
+      ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        @apply bg-slate-50 dark:bg-[#0a0a0a];
+      }
+      ::-webkit-scrollbar-thumb {
+        @apply bg-slate-300 dark:bg-[#262626];
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        @apply bg-slate-400 dark:bg-[#404040];
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.554.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "framer-motion": "https://aistudiocdn.com/framer-motion@^12.23.24",
+    "react-scroll": "https://aistudiocdn.com/react-scroll@^1.9.3"
+  }
+}
+</script>
+</head>
+  <body class="bg-slate-50 dark:bg-[#0a0a0a] text-slate-900 dark:text-[#e5e5e5] transition-colors duration-300">
+    <div id="root"></div>
+  </body>
+</html>
