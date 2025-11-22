@@ -49,7 +49,7 @@ const App: React.FC = () => {
   // Logic to handle local profile image with fallback
   // If local file fails, fallback to the Google Drive direct link so we never show a random person
   const placeholderImage = "https://drive.google.com/uc?export=view&id=1EEI4LAOU5qUKryGGudqjJr0yNv0j5xFO";
-  const profilePic = 'profile.jpeg';
+  const profilePic = 'profile.jpg';
   
   const profileImage = imgError ? placeholderImage : profilePic;
 
