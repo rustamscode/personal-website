@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react';
 import { motion, AnimatePresence, useMotionValue, useSpring, useTransform } from 'framer-motion';
-import { ExperienceItem } from '../types';
+import { ExperienceItem } from '../types.ts';
 import { Calendar, ArrowRight, Code2, Building2, Briefcase } from 'lucide-react';
 
 interface ExperienceTabsProps {
@@ -318,4 +318,3 @@ const ExperienceTabs: React.FC<ExperienceTabsProps> = ({ data, labels }) => {
 };
 
 export default ExperienceTabs;
-    

@@ -1,5 +1,6 @@
+
 import React from 'react';
-import { Achievement } from '../types';
+import { Achievement } from '../types.ts';
 import { motion } from 'framer-motion';
 import { Trophy } from 'lucide-react';
 

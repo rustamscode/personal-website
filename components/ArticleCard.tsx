@@ -1,5 +1,6 @@
+
 import React from 'react';
-import { Article } from '../types';
+import { Article } from '../types.ts';
 import { motion } from 'framer-motion';
 import { ArrowUpRight, BookOpen } from 'lucide-react';
 

@@ -14,16 +14,16 @@ import {
   Check
 } from 'lucide-react';
 
-import SpotlightEffect from './components/SpotlightEffect';
-import NetworkBackground from './components/NetworkBackground';
-import Section from './components/Section';
-import ExperienceTabs from './components/ExperienceTabs';
-import ProjectsShowcase from './components/ProjectsShowcase';
-import AboutSection from './components/AboutSection';
-import ArticleCard from './components/ArticleCard';
-import Header from './components/Header';
-import TechStack from './components/TechStack';
-import { CONTENT, SOCIAL_LINKS } from './constants';
+import SpotlightEffect from './components/SpotlightEffect.tsx';
+import NetworkBackground from './components/NetworkBackground.tsx';
+import Section from './components/Section.tsx';
+import ExperienceTabs from './components/ExperienceTabs.tsx';
+import ProjectsShowcase from './components/ProjectsShowcase.tsx';
+import AboutSection from './components/AboutSection.tsx';
+import ArticleCard from './components/ArticleCard.tsx';
+import Header from './components/Header.tsx';
+import TechStack from './components/TechStack.tsx';
+import { CONTENT, SOCIAL_LINKS } from './constants.ts';
 
 // Helper to dynamically render Lucide icons
 const IconRenderer: React.FC<{ name: string; className?: string }> = ({ name, className }) => {

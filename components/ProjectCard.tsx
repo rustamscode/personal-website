@@ -1,5 +1,6 @@
+
 import React from 'react';
-import { Project } from '../types';
+import { Project } from '../types.ts';
 import { motion } from 'framer-motion';
 import { ArrowUpRight, FolderGit2 } from 'lucide-react';
 

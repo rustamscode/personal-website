@@ -1,5 +1,6 @@
+
 import React from 'react';
-import { ExperienceItem } from '../types';
+import { ExperienceItem } from '../types.ts';
 import { motion } from 'framer-motion';
 
 interface ExperienceCardProps {

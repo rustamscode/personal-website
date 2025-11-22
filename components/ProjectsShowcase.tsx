@@ -1,5 +1,6 @@
+
 import React, { useState } from 'react';
-import { Project } from '../types';
+import { Project } from '../types.ts';
 import { motion, AnimatePresence, useMotionValue, useSpring, useTransform } from 'framer-motion';
 import { Layers, ExternalLink, Github, Zap, ShieldCheck, Globe, Database, Terminal } from 'lucide-react';
 

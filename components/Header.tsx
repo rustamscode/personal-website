@@ -1,9 +1,10 @@
+
 import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, Github, Linkedin, Send, Youtube, BookOpen, Mail, ChevronDown } from 'lucide-react';
-import { SOCIAL_LINKS } from '../constants';
-import LanguageSwitcher from './LanguageSwitcher';
-import ThemeToggle from './ThemeToggle';
+import { SOCIAL_LINKS } from '../constants.ts';
+import LanguageSwitcher from './LanguageSwitcher.tsx';
+import ThemeToggle from './ThemeToggle.tsx';
 
 // Helper to dynamically render Lucide icons
 const IconRenderer: React.FC<{ name: string; className?: string }> = ({ name, className }) => {

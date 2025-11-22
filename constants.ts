@@ -1,4 +1,4 @@
-import { ExperienceItem, SocialLink, Project, Achievement, Article } from './types';
+import { ExperienceItem, SocialLink, Project, Achievement, Article } from './types.ts';
 
 export const SOCIAL_LINKS: SocialLink[] = [
   {
