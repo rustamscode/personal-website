@@ -1151,12 +1151,9 @@
         const [language, setLanguage] = useState('en');
         const [copiedEmail, setCopiedEmail] = useState(false);
         const [copiedTelegram, setCopiedTelegram] = useState(false);
-        const [imgError, setImgError] = useState(false);
         
         const data = CONTENT[language];
-        const placeholderImage = "https://drive.google.com/uc?export=view&id=1EEI4LAOU5qUKryGGudqjJr0yNv0j5xFO";
-        const profilePic = 'profile.jpeg';
-        const profileImage = imgError ? placeholderImage : profilePic;
+        const profileImage = 'profile.jpeg';
 
         const handleScroll = (e, href) => {
           e.preventDefault();
@@ -1204,7 +1201,7 @@
                       <motion.div initial={{ opacity: 0, scale: 0.8, rotate: -5 }} animate={{ opacity: 1, scale: 1, rotate: -3 }} whileHover={{ scale: 1.02, rotate: 0 }} transition={{ duration: 0.5, type: "spring", bounce: 0.4 }} className="relative w-72 h-72 lg:w-96 lg:h-96 group shrink-0 perspective-1000 mx-auto lg:mx-0">
                          <div className="absolute inset-4 bg-blue-500 rounded-[2.5rem] blur-[60px] opacity-20 dark:opacity-40 group-hover:opacity-50 transition-opacity duration-500" />
                          <div className="relative w-full h-full rounded-[2.5rem] overflow-hidden border border-white/60 dark:border-slate-700 shadow-2xl bg-slate-100 dark:bg-slate-800/50 backdrop-blur-sm rotate-3 group-hover:rotate-0 transition-transform duration-500">
-                            <img src={profileImage} alt="Rustam Profile" onError={() => setImgError(true)} className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" />
+                            <img src={profileImage} alt="Rustam Profile" className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" />
                             <div className="absolute bottom-5 left-5 right-5 p-3 rounded-2xl bg-white/95 dark:bg-slate-900/95 backdrop-blur-xl border border-white/20 dark:border-slate-700/50 shadow-2xl transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300 ease-out">
                               <div className="flex items-center gap-3.5">
                                   <div className="relative h-10 w-10 flex-shrink-0 overflow-hidden rounded-xl shadow-sm border border-slate-100 dark:border-slate-800"><img src="https://upload.wikimedia.org/wikipedia/commons/f/f3/VK_Compact_Logo_%282021-present%29.svg" alt="VK Logo" className="h-full w-full object-cover" /></div>
