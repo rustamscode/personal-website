@@ -176,7 +176,7 @@ const App: React.FC = () => {
                    {/* Main Card - Squircle Shape */}
                    <div className="relative w-full h-full rounded-[2.5rem] overflow-hidden border border-white/60 dark:border-slate-700 shadow-2xl bg-slate-100 dark:bg-slate-800/50 backdrop-blur-sm rotate-3 group-hover:rotate-0 transition-transform duration-500">
                       <img 
-                          src="https://placehold.co/800x800/1e293b/cbd5e1?text=Rustam" 
+                          src="./profile.jpg" 
                           alt="Rustam Profile"
                           className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
                       />

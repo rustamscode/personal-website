@@ -59,7 +59,7 @@ const DATA_EN = {
     },
     about: {
         bio: [
-            "Back in 2018, I started my journey in the corporate world at Citibank, diving deep into the rigorous standards of fintech. Since then, I've navigated through Sberbank and now VK, constantly refining my craft in the JVM ecosystem.",
+            "Back in 2018, I started my journey in the corporate world at Citibank, diving deep into the rigorous standards of fintech. Since then, I've navigated through a Tier-1 Bank (NDA) and now VK, constantly refining my craft in the JVM ecosystem.",
             "My main focus these days is engineering accessible, resilient, and performant backend services. I enjoy the challenge of high-load systems—optimizing database queries, tuning garbage collectors, and ensuring microservices talk to each other politely.",
             "When I'm not writing Java or Kotlin, I'm usually sharing my knowledge on YouTube or writing articles on Medium to help others navigate the complex world of software engineering."
         ],
@@ -80,12 +80,12 @@ const DATA_EN = {
             logo: "https://placehold.co/200x200/0077FF/ffffff?text=VK"
         },
         {
-            company: "Sberbank",
+            company: "Tier-1 Bank (NDA)",
             role: "Java Backend Developer",
             duration: "2020 — 2022",
             description: "Developed core banking transaction processing systems. Implemented secure API gateways for mobile banking integration. Championed unit testing coverage increase from 40% to 85%.",
             skills: ["Java", "Spring Security", "Oracle DB", "Docker", "Jenkins"],
-            logo: "https://placehold.co/200x200/21a038/ffffff?text=Sber"
+            logo: "https://placehold.co/200x200/10b981/ffffff?text=NDA"
         },
         {
             company: "Citibank",
@@ -194,7 +194,7 @@ const DATA_RU = {
     },
     about: {
         bio: [
-            "В 2018 году я начал свой путь в корпоративном мире в Citibank, погрузившись в строгие стандарты финтеха. С тех пор я работал в Сбербанке, а сейчас в VK, постоянно совершенствуя свои навыки в экосистеме JVM.",
+            "В 2018 году я начал свой путь в корпоративном мире в Citibank, погрузившись в строгие стандарты финтеха. С тех пор я работал в крупном банке (NDA), а сейчас в VK, постоянно совершенствуя свои навыки в экосистеме JVM.",
             "Сейчас я сосредоточен на разработке доступных, отказоустойчивых и производительных бэкенд-сервисов. Мне нравятся задачи high-load систем — оптимизация запросов к БД, настройка GC и обеспечение корректного взаимодействия микросервисов.",
             "Когда я не пишу код на Java или Kotlin, я обычно делюсь знаниями на YouTube или пишу статьи на Medium, помогая другим ориентироваться в сложном мире разработки ПО."
         ],
@@ -215,12 +215,12 @@ const DATA_RU = {
             logo: "https://placehold.co/200x200/0077FF/ffffff?text=VK"
         },
         {
-            company: "Сбербанк",
+            company: "Банк Топ-1 (NDA)",
             role: "Java Backend Developer",
             duration: "2020 — 2022",
             description: "Разработка систем процессинга банковских транзакций. Внедрил безопасные API-шлюзы для мобильного банкинга. Увеличил покрытие юнит-тестами с 40% до 85%.",
             skills: ["Java", "Spring Security", "Oracle DB", "Docker", "Jenkins"],
-            logo: "https://placehold.co/200x200/21a038/ffffff?text=Sber"
+            logo: "https://placehold.co/200x200/10b981/ffffff?text=NDA"
         },
         {
             company: "Citibank",

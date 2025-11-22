@@ -140,8 +140,8 @@ const AboutSection: React.FC<AboutSectionProps> = ({ bio, highlights }) => {
 
              {bio.map((paragraph, i) => (
                  <p key={i} className="text-lg text-slate-600 dark:text-slate-300 leading-8 font-light">
-                    {paragraph.split(/(Citibank|Sberbank|VK|Java|Kotlin|JVM|Spring Boot)/g).map((part, idx) => {
-                        if (['Citibank', 'Sberbank', 'VK'].includes(part)) {
+                    {paragraph.split(/(Citibank|VK|Java|Kotlin|JVM|Spring Boot)/g).map((part, idx) => {
+                        if (['Citibank', 'VK'].includes(part)) {
                             return (
                                 <span key={idx} className="font-bold text-slate-900 dark:text-slate-100 decoration-blue-500/30 decoration-2 underline-offset-4 hover:decoration-blue-500 transition-all cursor-default">
                                     {part}
