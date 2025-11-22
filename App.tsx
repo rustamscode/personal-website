@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { 
@@ -41,7 +42,16 @@ const App: React.FC = () => {
   const [language, setLanguage] = useState<'en' | 'ru'>('en');
   const [copiedEmail, setCopiedEmail] = useState(false);
   const [copiedTelegram, setCopiedTelegram] = useState(false);
+  const [imgError, setImgError] = useState(false);
+  
   const data = CONTENT[language];
+
+  // Logic to handle local profile image with fallback
+  // If local file fails, fallback to the Google Drive direct link so we never show a random person
+  const placeholderImage = "https://drive.google.com/uc?export=view&id=1EEI4LAOU5qUKryGGudqjJr0yNv0j5xFO";
+  const profilePic = 'profile.jpeg';
+  
+  const profileImage = imgError ? placeholderImage : profilePic;
 
   const handleScroll = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
     e.preventDefault();
@@ -176,8 +186,9 @@ const App: React.FC = () => {
                    {/* Main Card - Squircle Shape */}
                    <div className="relative w-full h-full rounded-[2.5rem] overflow-hidden border border-white/60 dark:border-slate-700 shadow-2xl bg-slate-100 dark:bg-slate-800/50 backdrop-blur-sm rotate-3 group-hover:rotate-0 transition-transform duration-500">
                       <img 
-                          src="./profile.jpg" 
+                          src={profileImage} 
                           alt="Rustam Profile"
+                          onError={() => setImgError(true)}
                           className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
                       />
                       

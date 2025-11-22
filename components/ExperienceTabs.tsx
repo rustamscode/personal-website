@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { motion, AnimatePresence, useMotionValue, useSpring, useTransform } from 'framer-motion';
 import { ExperienceItem } from '../types';
@@ -25,7 +26,7 @@ const THEMES = [
         titleColor: "text-slate-900 dark:text-slate-100"
     },
     {
-        id: "sber",
+        id: "nda",
         gradient: "from-emerald-500/[0.1] via-teal-500/[0.05] to-transparent",
         activeBorder: "border-emerald-200 dark:border-emerald-500/30",
         hoverBorder: "hover:border-emerald-500/50 dark:hover:border-emerald-400/50",
@@ -317,3 +318,4 @@ const ExperienceTabs: React.FC<ExperienceTabsProps> = ({ data, labels }) => {
 };
 
 export default ExperienceTabs;
+    
